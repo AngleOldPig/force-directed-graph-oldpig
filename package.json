@@ -1,0 +1,19 @@
+{
+  "name": "force-directed-graph-oldpig",
+  "version": "1.0.0",
+  "description": "Give my friend a better graph.",
+  "productName": "Force Directed Graph by OldPig",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^10.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --out=build --asar --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Angle OldPig",
+  "license": "ISC"
+}

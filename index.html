@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force Directed Graph by OldPig</title>
+</head>
+<body>
+    <div class="chart"></div>
+    <div class="data"></div>
+    <div class="color"></div>
+    <div class="drag"></div>
+    <p>Credit: <a href="https://observablehq.com/@d3/force-directed-graph">Force-Directed Graph by D3</a></p>
+    <p>集成制作: Angle OldPig</p>
+    <p>载入缓慢请保持耐心</p>
+
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@d3/force-directed-graph.js?v=3";
+        (new Runtime).module(define, name => {
+        if (name === "chart") return Inspector.into(".chart")();
+        if (name === "data") return Inspector.into(".data")();
+        if (name === "color") return Inspector.into(".color")();
+        if (name === "drag") return Inspector.into(".drag")();
+        });
+    </script>
+</body>
+</html>
